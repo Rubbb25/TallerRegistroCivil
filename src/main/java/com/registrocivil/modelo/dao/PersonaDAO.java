@@ -7,9 +7,7 @@ import java.util.List;
 
 public class PersonaDAO {
 
-    private static List<Persona> personas;
-
-
+    private static List<Persona> personas = new ArrayList<>();
 
     public void create(Persona p){
         personas.add(p);
@@ -38,6 +36,10 @@ public class PersonaDAO {
     }
 
     public List<Persona> getAll() {
+        if (personas.isEmpty()) {
+            personas.add(new Persona(1, "Ruben Cuenca", "1726329699",22));
+            personas.add(new Persona(2, "Sara Aparicio", "1728795865",23 ));
+        }
         return personas;
     }
 }

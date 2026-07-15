@@ -1,0 +1,4 @@
+com\registrocivil\modelo\servicios\PersonaService.class
+com\registrocivil\recursos\RecursoPersona.class
+com\registrocivil\modelo\entities\Persona.class
+com\registrocivil\modelo\dao\PersonaDAO.class
